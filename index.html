@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trip Advisor</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Gabarito:wght@400..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./Style/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css">
+</head>
+
+<body>
+    <!-- Navbar -->
+    <section class="container navbar-sec">
+        <div class="navbar">
+            <div class="navbar__logo">
+                <img src="./Images/wordmark.svg" alt="Trip Advisor Logo">
+            </div>
+            <div class="navbar__list">
+                <a href="#">Discover</a>
+                <a href="#">Review</a>
+                <a href="#">More</a>
+                <a href="#">
+                    <svg viewBox="0 0 24 24" width="24px" height="24px" class="MmIoy AS UmNoP" aria-label="Your saves">
+                        <mask id="_lithium-R_sl9d5paoqpa_" maskUnits="userSpaceOnUse" x="0" y="0" width="24"
+                            height="24">
+                            <rect x="0" y="0" width="24" height="24" fill="#fff"></rect>
+                            <path
+                                d="M19.665 5.846a5.02 5.02 0 0 0-3.417-1.34c-1.27 0-2.491.478-3.417 1.34l-.84.802-.859-.812A5.02 5.02 0 0 0 7.72 4.5a5.02 5.02 0 0 0-3.412 1.336c-1.899 1.773-1.579 4.508-.01 6.43A101 101 0 0 0 11.99 19.5s5.995-5.143 7.674-7.224c1.679-2.08 1.878-4.657 0-6.43"
+                                transform="translate(9 8) scale(0.61538)" fill="#000" stroke="#000" stroke-width="2.5"
+                                stroke-linejoin="round"></path>
+                        </mask>
+                        <g mask="url(#_lithium-R_sl9d5paoqpa_)">
+                            <g transform="translate(0 3.26923) scale(0.76923)">
+                                <path
+                                    d="M4.25 8.25a1.25 1.25 0 1 0 0-2.5 1.25 1.25 0 0 0 0 2.5m0 5a1.25 1.25 0 1 0 0-2.5 1.25 1.25 0 0 0 0 2.5m0 5a1.25 1.25 0 1 0 0-2.5 1.25 1.25 0 0 0 0 2.5">
+                                </path>
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M21 7.75H7.5v-1.5H21zm0 5H7.5v-1.5H21zm0 5H7.5v-1.5H21z"></path>
+                            </g>
+                        </g>
+                        <path
+                            d="M3.798 5.166A5.77 5.77 0 0 1 7.72 3.63c1.455 0 2.857.548 3.922 1.536l.005.005.341.322.332-.317a5.77 5.77 0 0 1 3.928-1.54c1.458 0 2.862.55 3.928 1.54l.004.004c1.093 1.032 1.598 2.324 1.569 3.662-.03 1.323-.579 2.643-1.5 3.785-.884 1.096-2.85 2.943-4.547 4.478a185 185 0 0 1-3.153 2.785l-.069.059-.489-.569.489.569-.485.416-.488-.412a102 102 0 0 1-7.75-7.288l-.021-.021-.02-.023c-1.725-2.115-2.203-5.32.08-7.453zm8.19 13.226.472-.412a184 184 0 0 0 2.236-1.988c1.72-1.556 3.59-3.32 4.385-4.306.757-.939 1.147-1.948 1.168-2.877.02-.912-.313-1.795-1.097-2.536a4.27 4.27 0 0 0-2.904-1.138c-1.08 0-2.117.407-2.903 1.136l-1.35 1.292-1.375-1.3a4.27 4.27 0 0 0-2.9-1.133 4.27 4.27 0 0 0-2.901 1.135c-1.507 1.408-1.353 3.659.042 5.385a101 101 0 0 0 7.127 6.742"
+                            transform="translate(9 8) scale(0.61538)" fill-rule="evenodd" clip-rule="evenodd"></path>
+                    </svg>
+                </a>
+                <a href="#">
+                    <svg viewBox="0 0 24 24" width="20px" height="20px" class="MmIoy AS UmNoP" aria-hidden="true">
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M9.31 9.82h4.178c-.069-1.591-.356-2.993-.766-4.017-.237-.593-.501-1.023-.756-1.293-.211-.223-.38-.3-.5-.32h-.133c-.12.02-.289.097-.5.32-.255.27-.519.7-.756 1.293-.41 1.024-.697 2.426-.767 4.017m-.374-5.14q-.135.272-.252.566C8.194 6.472 7.88 8.07 7.81 9.82H5.055a6.39 6.39 0 0 1 3.88-5.14m2.301-1.989a7.883 7.883 0 0 0-7.726 7.88 7.88 7.88 0 0 0 7.884 7.885c.584 0 .871-.014 1.11-.074.124-.031.172-.049.213-.064.058-.02.099-.036.312-.073l-.26-1.477a4 4 0 0 0-.628.159c-.031.007-.132.029-.743.029-.121 0-.313-.06-.566-.327-.255-.27-.519-.699-.756-1.292-.41-1.025-.697-2.426-.767-4.017h4.203a4.7 4.7 0 0 1-.113.843 6 6 0 0 1-.112.413l-.012.04-.004.016c-.034.114-.089.298-.1.478l1.498.088v.006s.007-.035.044-.161l.012-.04c.038-.126.09-.298.136-.505.072-.313.134-.698.152-1.178h2.734a4.2 4.2 0 0 1-.195.949c-.055.16-.11.28-.166.403l-.004.01-.01.02c-.046.101-.132.288-.161.486l1.484.219-.005.026s.012-.032.057-.13l.008-.018c.056-.123.137-.3.216-.529.168-.49.31-1.168.31-2.186a7.88 7.88 0 0 0-7.72-7.879 2 2 0 0 0-.325 0m2.626 1.99q.134.271.252.565c.49 1.226.805 2.824.875 4.574h2.75a6.38 6.38 0 0 0-3.877-5.14M8.94 16.466a8 8 0 0 1-.256-.573c-.49-1.227-.805-2.824-.875-4.574H5.055a6.39 6.39 0 0 0 3.885 5.147">
+                        </path>
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M20.489 12.343h-8.75v6.648h5.255l3.495 2.325zm-1.5 1.5v4.674l-1.542-1.026H13.24v-3.648z">
+                        </path>
+                    </svg>
+                </a>
+                <a class="" href="#">
+                    <i class="fa-solid fa-user"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+    <!-- Banner Section -->
+    <section>
+        <div class="banner">
+            <h1 class="banner__head">
+                Where to?
+            </h1>
+        </div>
+        <div class="search">
+            <div class="search__box">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <input placeholder="Search for anything">
+            </div>
+        </div>
+    </section>
+    <section class="container main-banner-section">
+        <div class="manin__banner">
+            <div class="banner">
+                <div class="banner__box">
+                    <img src="./Images/banner.jpg" alt="Traval-Banner">
+                </div>
+                <div class="banner-header">
+                    <h1 class="banner__h1">
+                        Find things to do for everything you’re into
+                    </h1>
+                    <p class="banner__p">Find things to do for everything you’re into</p>
+                    <button type="button" class="banner__button">Book now</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="explore">
+            <h1 class="explore__title">Explore experiences near Chennai (Madras)</h1>
+            <p>Can’t-miss picks near you</p>
+            <div class="explore__container">
+                <div class="explore-card">
+                    <img alt="Guided Half Day City Tour with a local" src="./Images/caption-1.jpg">
+                    <h3>Best of Chennai: Guided Half Day City Tour with a local</h3>
+                    <p>3.9 <svg class="UctUV" viewBox="0 0 128 24" width="68" height="12" aria-hidden="true"
+                            data-automation="bubbleRatingImage">
+                            <path d="M 12 0C5.388 0 0 5.388 0 12s5.388 12 12 12 12-5.38 12-12c0-6.612-5.38-12-12-12z"
+                                transform=""></path>
+                            <path d="M 12 0C5.388 0 0 5.388 0 12s5.388 12 12 12 12-5.38 12-12c0-6.612-5.38-12-12-12z"
+                                transform="translate(26 0)"></path>
+                            <path d="M 12 0C5.388 0 0 5.388 0 12s5.388 12 12 12 12-5.38 12-12c0-6.612-5.38-12-12-12z"
+                                transform="translate(52 0)"></path>
+                            <path d="M 12 0C5.388 0 0 5.388 0 12s5.388 12 12 12 12-5.38 12-12c0-6.612-5.38-12-12-12z"
+                                transform="translate(78 0)"></path>
+                            <path d="M 12 0C5.388 0 0 5.388 0 12s5.388 12 12 12 12-5.38 12-12c0-6.612-5.38-12-12-12z"
+                                transform="translate(104 0)"></path>
+                        </svg></p>
+                    <p>from ₹2,554 per adult</p>
+                </div>
+                <div class="explore-card">
+                    <img alt="Guided Half Day City Tour with a local" src="./Images/caption-2.jpg">
+                    <h3>Top Rated Day trip Mahabalipuram and Pondicherry with Guide Lunch</h3>
+                    <p>4 <svg class="UctUV" viewBox="0 0 128 24" width="68" height="12" aria-hidden="true"
+                            data-automation="bubbleRatingImage">
+                            <path d="M 12 0C5.388 0 0 5.388 0 12s5.388 12 12 12 12-5.38 12-12c0-6.612-5.38-12-12-12z"
+                                transform=""></path>
+                            <path d="M 12 0C5.388 0 0 5.388 0 12s5.388 12 12 12 12-5.38 12-12c0-6.612-5.38-12-12-12z"
+                                transform="translate(26 0)"></path>
+                            <path d="M 12 0C5.388 0 0 5.388 0 12s5.388 12 12 12 12-5.38 12-12c0-6.612-5.38-12-12-12z"
+                                transform="translate(52 0)"></path>
+                            <path d="M 12 0C5.388 0 0 5.388 0 12s5.388 12 12 12 12-5.38 12-12c0-6.612-5.38-12-12-12z"
+                                transform="translate(78 0)"></path>
+                            <path d="M 12 0C5.388 0 0 5.388 0 12s5.388 12 12 12 12-5.38 12-12c0-6.612-5.38-12-12-12z"
+                                transform="translate(104 0)"></path>
+                        </svg></p>
+                    <p>from ₹5,108 per adult</p>
+                </div>
+                <div class="explore-card">
+                    <img alt="Guided Half Day City Tour with a local" src="./Images/caption-3.jpg">
+                    <h3>PRIVATE Chennai Cooking Class in a Local Home with Meena</h3>
+                    <p>4.2 <svg class="UctUV" viewBox="0 0 128 24" width="68" height="12" aria-hidden="true"
+                            data-automation="bubbleRatingImage">
+                            <path d="M 12 0C5.388 0 0 5.388 0 12s5.388 12 12 12 12-5.38 12-12c0-6.612-5.38-12-12-12z"
+                                transform=""></path>
+                            <path d="M 12 0C5.388 0 0 5.388 0 12s5.388 12 12 12 12-5.38 12-12c0-6.612-5.38-12-12-12z"
+                                transform="translate(26 0)"></path>
+                            <path d="M 12 0C5.388 0 0 5.388 0 12s5.388 12 12 12 12-5.38 12-12c0-6.612-5.38-12-12-12z"
+                                transform="translate(52 0)"></path>
+                            <path d="M 12 0C5.388 0 0 5.388 0 12s5.388 12 12 12 12-5.38 12-12c0-6.612-5.38-12-12-12z"
+                                transform="translate(78 0)"></path>
+                            <path d="M 12 0C5.388 0 0 5.388 0 12s5.388 12 12 12 12-5.38 12-12c0-6.612-5.38-12-12-12z"
+                                transform="translate(104 0)"></path>
+                        </svg></p>
+                    <p>from ₹17,878 per adult</p>
+                </div>
+                <div class="explore-card">
+                    <img alt="Guided Half Day City Tour with a local" src="./Images/caption-1.jpg">
+                    <h3>Gods of Mylapore walking tour: Journey Through Living Traditions</h3>
+                    <p>3.5 <svg class="UctUV" viewBox="0 0 128 24" width="68" height="12" aria-hidden="true"
+                            data-automation="bubbleRatingImage">
+                            <path d="M 12 0C5.388 0 0 5.388 0 12s5.388 12 12 12 12-5.38 12-12c0-6.612-5.38-12-12-12z"
+                                transform=""></path>
+                            <path d="M 12 0C5.388 0 0 5.388 0 12s5.388 12 12 12 12-5.38 12-12c0-6.612-5.38-12-12-12z"
+                                transform="translate(26 0)"></path>
+                            <path d="M 12 0C5.388 0 0 5.388 0 12s5.388 12 12 12 12-5.38 12-12c0-6.612-5.38-12-12-12z"
+                                transform="translate(52 0)"></path>
+                            <path d="M 12 0C5.388 0 0 5.388 0 12s5.388 12 12 12 12-5.38 12-12c0-6.612-5.38-12-12-12z"
+                                transform="translate(78 0)"></path>
+                            <path d="M 12 0C5.388 0 0 5.388 0 12s5.388 12 12 12 12-5.38 12-12c0-6.612-5.38-12-12-12z"
+                                transform="translate(104 0)"></path>
+                        </svg></p>
+                    <p>from ₹3,999 per adult</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="inspiration">
+        <div class="inspiration_list">
+            <h1 class="inspiration__title">Inspiration to get you going</h1>
+            <div class="inspiration__container">
+                <div class="inspiration-card">
+                    <img alt="Guided Half Day City Tour with a local" src="./Images/caption-1.jpg">
+                    <h3>8 geothermal wonders worth planning a trip around</h3>
+                </div>
+                <div class="inspiration-card">
+                    <img alt="Guided Half Day City Tour with a local" src="./Images/caption-2.jpg">
+                    <h3>12 stargazing spots you can’t miss</h3>
+                </div>
+                <div class="inspiration-card">
+                    <img alt="Guided Half Day City Tour with a local" src="./Images/caption-3.jpg">
+                    <h3>10 one-of-a-kind experiences in Orlando</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="explore">
+            <h1 class="explore__title">Cook around the world</h1>
+            <p>Take a class and whip up a next-level meal</p>
+            <div class="explore__container">
+                <div class="explore-card">
+                    <img alt="Guided Half Day City Tour with a local" src="./Images/cooking-1.jpg">
+                    <h3>Thai and Akha Cooking Class in Chiang Mai</h3>
+                    <p>3.9 <svg class="UctUV" viewBox="0 0 128 24" width="68" height="12" aria-hidden="true"
+                            data-automation="bubbleRatingImage">
+                            <path d="M 12 0C5.388 0 0 5.388 0 12s5.388 12 12 12 12-5.38 12-12c0-6.612-5.38-12-12-12z"
+                                transform=""></path>
+                            <path d="M 12 0C5.388 0 0 5.388 0 12s5.388 12 12 12 12-5.38 12-12c0-6.612-5.38-12-12-12z"
+                                transform="translate(26 0)"></path>
+                            <path d="M 12 0C5.388 0 0 5.388 0 12s5.388 12 12 12 12-5.38 12-12c0-6.612-5.38-12-12-12z"
+                                transform="translate(52 0)"></path>
+                            <path d="M 12 0C5.388 0 0 5.388 0 12s5.388 12 12 12 12-5.38 12-12c0-6.612-5.38-12-12-12z"
+                                transform="translate(78 0)"></path>
+                            <path d="M 12 0C5.388 0 0 5.388 0 12s5.388 12 12 12 12-5.38 12-12c0-6.612-5.38-12-12-12z"
+                                transform="translate(104 0)"></path>
+                        </svg></p>
+                    <p>from ₹2,554 per adult</p>
+                </div>
+                <div class="explore-card">
+                    <img alt="Guided Half Day City Tour with a local" src="./Images/cooking-2.jpg">
+                    <h3>Learn to Make Pasta & Tiramisu with Wine and Limoncello Included</h3>
+                    <p>4 <svg class="UctUV" viewBox="0 0 128 24" width="68" height="12" aria-hidden="true"
+                            data-automation="bubbleRatingImage">
+                            <path d="M 12 0C5.388 0 0 5.388 0 12s5.388 12 12 12 12-5.38 12-12c0-6.612-5.38-12-12-12z"
+                                transform=""></path>
+                            <path d="M 12 0C5.388 0 0 5.388 0 12s5.388 12 12 12 12-5.38 12-12c0-6.612-5.38-12-12-12z"
+                                transform="translate(26 0)"></path>
+                            <path d="M 12 0C5.388 0 0 5.388 0 12s5.388 12 12 12 12-5.38 12-12c0-6.612-5.38-12-12-12z"
+                                transform="translate(52 0)"></path>
+                            <path d="M 12 0C5.388 0 0 5.388 0 12s5.388 12 12 12 12-5.38 12-12c0-6.612-5.38-12-12-12z"
+                                transform="translate(78 0)"></path>
+                            <path d="M 12 0C5.388 0 0 5.388 0 12s5.388 12 12 12 12-5.38 12-12c0-6.612-5.38-12-12-12z"
+                                transform="translate(104 0)"></path>
+                        </svg></p>
+                    <p>from ₹5,108 per adult</p>
+                </div>
+                <div class="explore-card">
+                    <img alt="Guided Half Day City Tour with a local" src="./Images/cooking-3.jpg">
+                    <h3>Paris Cooking Class and Lunch with Wine plus Market Visit Option</h3>
+                    <p>4.2 <svg class="UctUV" viewBox="0 0 128 24" width="68" height="12" aria-hidden="true"
+                            data-automation="bubbleRatingImage">
+                            <path d="M 12 0C5.388 0 0 5.388 0 12s5.388 12 12 12 12-5.38 12-12c0-6.612-5.38-12-12-12z"
+                                transform=""></path>
+                            <path d="M 12 0C5.388 0 0 5.388 0 12s5.388 12 12 12 12-5.38 12-12c0-6.612-5.38-12-12-12z"
+                                transform="translate(26 0)"></path>
+                            <path d="M 12 0C5.388 0 0 5.388 0 12s5.388 12 12 12 12-5.38 12-12c0-6.612-5.38-12-12-12z"
+                                transform="translate(52 0)"></path>
+                            <path d="M 12 0C5.388 0 0 5.388 0 12s5.388 12 12 12 12-5.38 12-12c0-6.612-5.38-12-12-12z"
+                                transform="translate(78 0)"></path>
+                            <path d="M 12 0C5.388 0 0 5.388 0 12s5.388 12 12 12 12-5.38 12-12c0-6.612-5.38-12-12-12z"
+                                transform="translate(104 0)"></path>
+                        </svg></p>
+                    <p>from ₹17,878 per adult</p>
+                </div>
+                <div class="explore-card">
+                    <img alt="Guided Half Day City Tour with a local" src="./Images/cooking-4.jpg">
+                    <h3>Flavors of Oaxaca: Cooking Class with No Set Menu and Local Market Tour</h3>
+                    <p>3.5 <svg class="UctUV" viewBox="0 0 128 24" width="68" height="12" aria-hidden="true"
+                            data-automation="bubbleRatingImage">
+                            <path d="M 12 0C5.388 0 0 5.388 0 12s5.388 12 12 12 12-5.38 12-12c0-6.612-5.38-12-12-12z"
+                                transform=""></path>
+                            <path d="M 12 0C5.388 0 0 5.388 0 12s5.388 12 12 12 12-5.38 12-12c0-6.612-5.38-12-12-12z"
+                                transform="translate(26 0)"></path>
+                            <path d="M 12 0C5.388 0 0 5.388 0 12s5.388 12 12 12 12-5.38 12-12c0-6.612-5.38-12-12-12z"
+                                transform="translate(52 0)"></path>
+                            <path d="M 12 0C5.388 0 0 5.388 0 12s5.388 12 12 12 12-5.38 12-12c0-6.612-5.38-12-12-12z"
+                                transform="translate(78 0)"></path>
+                            <path d="M 12 0C5.388 0 0 5.388 0 12s5.388 12 12 12 12-5.38 12-12c0-6.612-5.38-12-12-12z"
+                                transform="translate(104 0)"></path>
+                        </svg></p>
+                    <p>from ₹3,999 per adult</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="container main-banner-section">
+        <div class="sub__banner">
+            <div class="banner">
+                <div class="banner__box">
+                    <img src="./Images/sub-banner.jpg" alt="Traval-Banner">
+                </div>
+                <div class="banner-header">
+                    <h1 class="banner__h1">
+                        Watch The Wanderer
+                    </h1>
+                    <p class="banner__p">Tripadvisor’s award-winning travel series, now streaming on Amazon Prime Video
+                    </p>
+                    <button type="button" class="banner__button">Learn More</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="traveller-choice">
+        <div class="traveller__sec">
+            <div class="traveller__text">
+                <h1 class="traveller__h1">
+                    Travellers' Choice Awards Best of the Best
+                </h1>
+                <p class="traveller__p">
+                    Among our top 1% of places, stays, eats, and experiences—decided by you.
+                </p>
+                <button type="button" class="banner__button">Learn More</button>
+            </div>
+            <div class="traveller__img">
+                <img src="./Images/traval-banner.jpg" alt="Traval-Banner">
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="footer">
+            <div class="footer__one">
+                <div class="footer__one_s1">
+                    <h4>About Tripadvisor</h4>
+                    <p>About Us</p>
+                    <p>Press</p>
+                    <p>Resources and Policies</p>
+                    <p>Careers</p>
+                    <p>Trust & Safety</p>
+                    <p>Contact us</p>
+                    <p>Tripadvisor Technology Blog</p>
+                </div>
+                <div class="footer__one_s1">
+                    <h4>Explore</h4>
+                    <p>Things to Do</p>
+                    <p>Hotels</p>
+                    <p>Restaurants</p>
+                    <p>Cruises</p>
+                    <p>Write a review</p>
+                    <p>Add a Place</p>
+                    <p>Join </p>
+                </div>
+                <div class="footer__one_s1">
+                    <h4>Do Business With Us</h4>
+                    <p>Owners & DMO/CVB</p>
+                    <p>Business Advantage</p>
+                    <p>Sponsored Placements</p>
+                    <p>Advertise with Us</p>
+                    <p>Access our Content API</p>
+                </div>
+            </div>
+            <div class="footer__two">
+                <img class="XpHHt t y Ah" src="./Images/wordmark.svg" alt="Tripadvisor">
+                <div>
+                    <a href="#">
+                        <svg viewBox="0 0 24 24" width="24px" height="24px" class="MmIoy AS UmNoP" aria-hidden="true"><path d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.093 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.563V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.129 22 16.992 22 12"></path></svg>
+                    </a>
+                    <a href="#">
+                        <svg viewBox="0 0 24 24" width="24px" height="24px" class="MmIoy AS UmNoP" aria-hidden="true"><path d="M13.905 10.47 21.35 2h-1.764L13.12 9.353 7.956 2H2l7.809 11.12L2 22h1.764l6.827-7.766L16.044 22H22M4.4 3.302h2.71l12.476 17.46h-2.71"></path></svg>
+                    </a>
+                    <a href="#">
+                        <svg viewBox="0 0 24 24" width="24px" height="24px" class="MmIoy AS UmNoP" aria-hidden="true"><path d="M12.008 2C6.481 2 2 6.474 2 11.992c0 4.235 2.636 7.853 6.36 9.309-.091-.79-.166-2.007.032-2.87.181-.781 1.17-4.967 1.17-4.967s-.297-.6-.297-1.48c0-1.39.807-2.426 1.812-2.426.857 0 1.269.641 1.269 1.406 0 .855-.544 2.138-.832 3.33-.239.995.503 1.81 1.483 1.81 1.779 0 3.146-1.875 3.146-4.573 0-2.393-1.721-4.062-4.184-4.062-2.85 0-4.522 2.13-4.522 4.334 0 .855.329 1.776.74 2.278a.3.3 0 0 1 .067.287c-.074.313-.247.995-.28 1.135-.041.181-.149.222-.338.132-1.252-.584-2.035-2.401-2.035-3.873 0-3.15 2.29-6.045 6.615-6.045 3.468 0 6.17 2.467 6.17 5.773 0 3.446-2.175 6.217-5.19 6.217-1.013 0-1.969-.526-2.29-1.151l-.626 2.377c-.222.871-.832 1.957-1.244 2.623.94.288 1.928.444 2.966.444C17.519 22 22 17.526 22 12.008 22.016 6.474 17.535 2 12.008 2"></path></svg>
+                    </a>
+                    <a href="#">
+                        <svg viewBox="0 0 24 24" width="24px" height="24px" class="MmIoy AS UmNoP" aria-hidden="true"><path d="M12 3.803c2.67 0 2.986.01 4.04.059.976.044 1.505.207 1.858.344.435.16.828.416 1.151.748.332.323.588.716.748 1.151.137.353.3.882.344 1.857.049 1.055.059 1.37.059 4.041 0 2.67-.01 2.986-.059 4.041-.044.975-.207 1.505-.344 1.857A3.32 3.32 0 0 1 17.9 19.8c-.352.137-.882.3-1.857.344-1.054.048-1.37.058-4.04.058s-2.987-.01-4.041-.058c-.975-.044-1.505-.207-1.857-.344a3.1 3.1 0 0 1-1.151-.748 3.1 3.1 0 0 1-.749-1.151c-.137-.353-.3-.883-.344-1.857-.048-1.055-.058-1.371-.058-4.041s.01-2.987.058-4.041c.045-.975.207-1.505.344-1.857a3.1 3.1 0 0 1 .749-1.151 3.1 3.1 0 0 1 1.15-.749c.353-.137.883-.3 1.858-.344 1.054-.048 1.37-.058 4.04-.058zM12.002 2c-2.716 0-3.057.012-4.124.06-1.066.05-1.793.22-2.428.466A4.9 4.9 0 0 0 3.678 3.68a4.9 4.9 0 0 0-1.153 1.772c-.247.635-.416 1.363-.465 2.427C2.012 8.943 2 9.286 2 12.002c0 2.715.012 3.056.06 4.123.05 1.066.218 1.791.465 2.426a4.9 4.9 0 0 0 1.153 1.772c.5.508 1.105.902 1.772 1.153.635.248 1.363.417 2.428.465s1.407.06 4.123.06 3.056-.01 4.123-.06 1.79-.217 2.426-.465a5.1 5.1 0 0 0 2.925-2.925c.247-.635.416-1.363.465-2.427.048-1.064.06-1.407.06-4.123s-.012-3.057-.06-4.123c-.05-1.067-.218-1.791-.465-2.426a4.9 4.9 0 0 0-1.153-1.771 4.9 4.9 0 0 0-1.772-1.155c-.635-.247-1.363-.416-2.428-.464s-1.406-.06-4.122-.06z"></path><path d="M12 6.866a5.135 5.135 0 1 0 0 10.27 5.135 5.135 0 0 0 0-10.27m0 8.47a3.334 3.334 0 1 1 0-6.669 3.334 3.334 0 0 1 0 6.669m5.338-7.473a1.2 1.2 0 1 0 0-2.4 1.2 1.2 0 0 0 0 2.4"></path></svg>
+                    </a>
+                    <a href="#">
+                        <svg viewBox="0 0 24 24" width="24px" height="24px" class="MmIoy AS UmNoP" aria-hidden="true"><path d="M21.8 7.9s-.2-1.4-.8-2c-.8-.8-1.6-.8-2-.8-2.8-.2-7-.2-7-.2s-4.2 0-7 .2c-.4.1-1.3.1-2 .9-.6.6-.8 2-.8 2S2 9.6 2 11.2v1.5c0 1.6.2 3.2.2 3.2s.2 1.399.8 2c.8.8 1.8.8 2.2.899C6.8 18.9 12 19 12 19s4.2 0 7-.2c.4 0 1.2-.1 2-.8.6-.6.8-2 .8-2s.2-1.6.2-3.2v-1.5c0-1.7-.2-3.4-.2-3.4M9.9 14.5V8.9l5.4 2.8z"></path></svg>
+                    </a>
+                    <a href="#">
+                        <svg viewBox="0 0 24 24" width="24px" height="24px" class="MmIoy AS UmNoP" aria-hidden="true"><path d="M18.116 6.009A4.8 4.8 0 0 1 15.936 2h-3.438l-.005 13.78a2.89 2.89 0 0 1-2.885 2.782 2.89 2.89 0 0 1-2.89-2.89 2.894 2.894 0 0 1 2.89-2.891c.297 0 .583.049.853.133v-3.51a6 6 0 0 0-.853-.062 6.336 6.336 0 0 0-6.329 6.33 6.32 6.32 0 0 0 2.702 5.181A6.3 6.3 0 0 0 9.608 22a6.336 6.336 0 0 0 6.329-6.328V8.683a8.18 8.18 0 0 0 4.784 1.538V6.783c-.96 0-1.855-.285-2.605-.774"></path></svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>

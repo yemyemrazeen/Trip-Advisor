@@ -1,0 +1,326 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+    color: #002b11;
+}
+
+.container {
+    padding: 10px;
+}
+
+.navbar-sec {
+    position: sticky;
+    top: 0;
+    background-color: #fff;
+    border-bottom: 1px solid #333;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar__logo img {
+    width: 75%;
+}
+
+.navbar__list {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.navbar__list a {
+    text-decoration: none;
+    color: #002b11;
+    font-size: 16px;
+    font-weight: 600;
+    padding: 10px;
+}
+
+.navbar__list a:hover {
+    background-color: #00000014;
+    border-radius: 50px;
+}
+
+.banner__head {
+    font-size: 40px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.search {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 40px 0;
+}
+
+.search__box {
+    text-align: center;
+    border: 1px solid #333;
+    padding: 15px;
+    border-radius: 30px;
+    width: 40%;
+    display: flex;
+    gap: 10px;
+}
+
+.search__box input {
+    border: none;
+    width: 100%;
+    font-size: 16px;
+}
+
+.manin__banner {
+    background: #00eb5b;
+    padding: 15px;
+    border-radius: 15px;
+    width: 60%;
+}
+
+.main-banner-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.banner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+}
+
+.banner__box {
+    width: 50%;
+}
+
+.banner-header {
+    width: 50%;
+    text-align: center;
+}
+
+.banner__h1 {
+    margin-bottom: 15px;
+    font-size: 45px;
+}
+
+.banner__p {
+    margin-bottom: 15px;
+}
+
+.banner img {
+    width: 100%;
+    border-radius: 15px;
+    height: 350px;
+}
+
+.banner__button {
+    background-color: #002b11;
+    color: #fff;
+    border: none;
+    border-radius: 50px;
+    padding: 15px;
+}
+
+.explore {
+    margin: 50px 10px;
+}
+
+.explore__container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 10px;
+    gap: 20PX;
+}
+
+.explore__title {
+    margin-bottom: 20px;
+}
+
+.explore-card {
+    width: 300px;
+}
+
+.explore-card img {
+    width: 100%;
+    height: 200px;
+    border-radius: 15px;
+}
+
+.explore-card p {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.UctUV {
+    display: block;
+    fill: #00852f;
+}
+
+.inspiration {
+    background-color: #f7f7f7;
+    padding: 20px 0;
+    margin: 0 auto;
+}
+
+.inspiration__title {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.inspiration__container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 10px;
+    gap: 20px;
+}
+
+.inspiration-card {
+    width: 300px;
+}
+
+.inspiration img {
+    width: 100%;
+    height: 200px;
+    border-radius: 15px;
+}
+
+.sub__banner {
+    background: #f7f7f7;
+    padding: 15px;
+    width: 60%;
+}
+
+.sub__banner .banner img {
+    width: 100%;
+    border-radius: 0;
+    height: 350px;
+}
+
+.traveller-choice {
+    margin: 30px 0;
+    background-color: #333;
+}
+
+.traveller__text {
+    text-align: center;
+}
+
+.traveller__h1 {
+    margin-bottom: 20px;
+    font-size: 60px;
+}
+
+.traveller__sec {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    gap: 20px;
+}
+
+.traveller__text .banner__button {
+    background-color: #ffc56f;
+    margin-top: 20px;
+}
+
+.traveller__img {
+    width: 50%;
+}
+
+.traveller__img img {
+    width: 100%;
+}
+
+.footer {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #f7f7f7;
+}
+
+.footer__one {
+    display: flex;
+    gap: 10px;
+}
+
+.footer__one p,
+.footer__one h4 {
+    margin: 20px;
+}
+
+.footer__two {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px;
+}
+
+.footer__two img {
+    width: 250px;
+}
+
+.footer__two a {
+    text-decoration: none;
+}
+
+@media screen and (max-width: 600px) {
+    .manin__banner {
+        width: 100%;
+    }
+
+    .banner__h1 {
+        margin-bottom: 15px;
+        font-size: 20px;
+    }
+
+    .explore-card {
+        width: 100%;
+    }
+
+    .traveller__sec {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: #fff;
+        gap: 20px;
+        padding: 25px;
+    }
+
+    .traveller__h1 {
+        margin-bottom: 20px;
+        font-size: 20px;
+    }
+
+    .traveller__img img {
+        width: 100%;
+        height: 150px;
+    }
+
+    .footer__one {
+        display: flex;
+        gap: 10px;
+        flex-direction: column;
+    }
+
+    .footer__two {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 20px;
+        flex-direction: column;
+    }
+
+    .footer__two img {
+        margin-bottom: 20px;
+    }
+}
